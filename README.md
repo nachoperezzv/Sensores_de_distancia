@@ -1,4 +1,4 @@
-## Sensores_de_distancia
+# Sensores_de_distancia
 Un sensor de distancia permite realizar la medida de distancia o desplazamiento entre el propio sensor y un
 objeto en frente de él una forma automatizada, y proporciona una señal eléctrica según la variación física de
 distancia. Dependiendo de lo sofisticado que sea el sensor, la señal eléctrica puede ser analógica con una
@@ -18,4 +18,5 @@ de forma que puedan ser fácilmente guardadas en archivos y analizadas con una h
 analizando el funcionamiento de los sensores y la comparación de sus características antes distintos objetos,
 se concluirá para que tipo de aplicación es más adecuado cada sensor. 
 
-# Estructura del documento
+## Estructura del documento
+Este repositorio tendrá, además del README.md, otros tres archivos. Cada uno contendrá el main con el código principal para probar el sensor (cuyo tipo será el mismo que el nombre del directorio), así como el resto de documentación, ya sea archivos .csv, .xml/.xmls u otros archivos de cabecerá para compilar el main. 
