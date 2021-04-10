@@ -1,4 +1,4 @@
-# Sensores_de_distancia
+## Sensores_de_distancia
 Un sensor de distancia permite realizar la medida de distancia o desplazamiento entre el propio sensor y un
 objeto en frente de él una forma automatizada, y proporciona una señal eléctrica según la variación física de
 distancia. Dependiendo de lo sofisticado que sea el sensor, la señal eléctrica puede ser analógica con una
@@ -17,3 +17,5 @@ sí. Las medidas serán enviadas por Arduino al ordenador mediante la comunicaci
 de forma que puedan ser fácilmente guardadas en archivos y analizadas con una hoja de cálculo. Finalmente,
 analizando el funcionamiento de los sensores y la comparación de sus características antes distintos objetos,
 se concluirá para que tipo de aplicación es más adecuado cada sensor. 
+
+# Estructura del documento
