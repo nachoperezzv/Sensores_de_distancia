@@ -1,0 +1,8 @@
+﻿Nombre,Cantidad,Componente
+"U1",1," Arduino Uno R3"
+"DIST1",1," Sensor de distancia ultrasónico"
+"U2",1," LCD 16 x 2"
+"R1",1,"220 Ω Resistencia"
+"Rpot1",1,"250 kΩ Potenciómetro"
+"S1",1," Pulsador"
+"R2",1,"1 kΩ Resistencia"
