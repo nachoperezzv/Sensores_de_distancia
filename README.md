@@ -19,4 +19,4 @@ analizando el funcionamiento de los sensores y la comparación de sus caracterí
 se concluirá para que tipo de aplicación es más adecuado cada sensor. 
 
 ## Estructura del documento
-Este repositorio tendrá, además del README.md, otros tres archivos. Cada uno contendrá el main con el código principal para probar el sensor (cuyo tipo será el mismo que el nombre del directorio), así como el resto de documentación, ya sea archivos .csv, .xml/.xmls u otros archivos de cabecerá para compilar el main. 
+Este repositorio tendrá, además del README.md, otras tres carpetas y archivos .csv (tablas comparativas cuya visualización es sencilla desde este mismo repositorio). Cada uno contendrá el main con el código principal para probar el sensor (cuyo tipo será el mismo que el nombre del directorio), así como el resto de documentación, ya sea archivos .csv, .xml/.xmls u otros archivos de cabecerá para compilar el main. 
