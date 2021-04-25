@@ -60,7 +60,7 @@ void loop() {
           corriente = vin/resist*1000;        //La pasamos a corriente en mA
           
           
-          if(corriente>20 or corriente<4{  //Filtramos la corriente. Si no
+          if(corriente>20 or corriente<4){  //Filtramos la corriente. Si no
             corriente = 0;                            //cumple un rango, se descarta
             distancia = 0;                            //distancia a cero por estar fuera de rango
           }                          
