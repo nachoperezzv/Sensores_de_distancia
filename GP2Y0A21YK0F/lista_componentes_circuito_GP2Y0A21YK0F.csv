@@ -1,0 +1,8 @@
+﻿Nombre,Cantidad,Componente
+"U7",1," Arduino Uno R3"
+"U8",1," LCD 16 x 2"
+"Rpot4",1,"250 kΩ Potenciómetro"
+"R4",1,"1.2 kΩ Resistencia"
+"D1",1," LED RGB"
+"S1",1," Pulsador"
+"R200",1,"1 Ω Resistencia"

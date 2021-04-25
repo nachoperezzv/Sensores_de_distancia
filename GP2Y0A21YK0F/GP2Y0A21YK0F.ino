@@ -32,6 +32,7 @@ void setup() {
 
   //Configuración Boton
   pinMode(pinButt, INPUT);
+  //pinMode(pinButt, INPUT_PULLUP); 
   attachInterrupt(digitalPinToInterrupt(pinButt), funcion_ISR, RISING);
     
   //Configuración Sensor HC-SR04
@@ -57,24 +58,23 @@ void loop() {
         for(int n=0;n<5;n++){  //Cada medida se va a tomar 5 veces
           _m++; //Numero de la muestra que se esta tomando
           
-          valor = analogRead(pinSen); //Medimos la entrada analógica en mv y pasamos a V
-          vin = (valor * 5)/1023.0;   //Convertimos a milivoltios
-
+          valor = analogRead(pinSen);         //Medimos la entrada analógica en mv 
+          vin = (valor * 5000)/1023.0;   //Convertimos a milivoltios
           
-          if(vin>2.25 or vin<0.4){  //Filtramos la corriente. Si no
-            valor = 0;              //cumple un rango, se descarta
-            distancia = 0;          //distancia a cero por estar fuera de rango
+          
+          if(vin>2250 or vin<400){  //Filtramos la corriente. Si no
+            valor = 0;                            //cumple un rango, se descarta
+            distancia = 0;                            //distancia a cero por estar fuera de rango
           }                          
           else{  
             //distancia = 26.707 * pow(vin, -1.267) * 10;//Se calcula la distancia en cm
-            distancia = 17569.7 * pow(valor, -1.2062);                                      
-            //mediante la ecuación de la recta que pasa por 2 puntos
-            //ya que conocemos el rango de medidas y su distribución lineal 
+            distancia = 17569.7 * pow(valor, -1.2062);                                      //mediante la ecuación de la recta que pasa por 2 puntos
+                                                   //ya que conocemos el rango de medidas y su distribución lineal 
           }
           //Los siguientes comandos imprimen los datos en un formato .csv
           Serial.print(_m);         Serial.print(",");
           Serial.print(_DRef[j]);   Serial.print(",");
-          Serial.print(vin);        Serial.print(",");
+          Serial.print(vin);     Serial.print(",");
           Serial.println(distancia);
 
           //Se imprime en la LCD
